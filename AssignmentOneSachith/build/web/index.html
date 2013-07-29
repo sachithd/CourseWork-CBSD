@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <script type="text/javascript">
+            (function(){ 
+                document.$_GET = [];
+                var urlHalves = String(document.location).split('?');
+                if(urlHalves[1]){
+                    var urlVars = urlHalves[1].split('&');
+                    for(var i=0; i<=(urlVars.length); i++){
+                        if(urlVars[i]){
+                            var urlVarPair = urlVars[i].split('=');
+                            document.$_GET[urlVarPair[0]] = urlVarPair[1];
+                        }
+                    }
+                }
+            })();
+        </script>
+
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            if(document.$_GET['invalid']==1)
+            {
+                document.write("<font color=\"RED\"> SSN Number already exists. You cannot play again</font>");
+            }
+            else if(document.$_GET['invalid']==2)
+            {
+                document.write("<font color=\"RED\"> Please complete the form to continue</font>");
+            }
+        </script>
+
+
+        <div><h1><font color="cyan">Who Wants to Be a Billionaire</font></h1>
+        <b> To start the quiz please fill in your details and click on Continue</b>  <br/><br/>
+            <form name="loginForm" method="get" action="/AssignmentOneSachith/Login">
+
+                <table width="350"  border="1">
+                    <tr>
+                        <td width="170">Name</td>
+                        <td width="180">
+                            <label for="txtName"></label>
+                            <input type="text" name="txtName" id="txtName" size="24">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td><input type="text" name="txtCity" id="txtCity" size="24"></td>
+                    </tr>
+                    <tr>
+                        <td>Social security number</td>
+                        <td><input type="text" name="txtSSN" id="txtSSN" size="24"></td>
+                    </tr>
+                </table>
+                <p>
+                    <input type="submit" name="btnSubmit" id="btnSubmit" value="Continue">
+                    <input type="reset" name="btnClear" id="btnClear" value="Clear">
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

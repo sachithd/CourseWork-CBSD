@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Update address</title>
+
+</head>
+<body>
+<h3 style="color: rgb(51, 0, 153);"><big><big>Update address<br>
+</big></big></h3>
+<form method="post" action="/CustomerManagement/AddressOperations" name="CustomerData"><br>
+<table style="text-align: left; width: 850px; height: 172px;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 427px;">Address
+ID<br>
+</td>
+<td style="vertical-align: top; width: 403px;"><input name="txtAddressID"> * Existing address ID to update<br>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 427px;">Street
+Name<br>
+</td>
+<td style="vertical-align: top; width: 403px;"><input name="txtAdrStreet"><br>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 427px;">City<br>
+</td>
+<td style="vertical-align: top; width: 403px;"><input name="txtCity"><br>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 427px;">County<br>
+</td>
+<td style="vertical-align: top; width: 403px;"><input name="txtCounty"><br>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 427px;">Post
+Code<br>
+</td>
+<td style="vertical-align: top; width: 403px;"><input name="txtPostCode"><br>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 427px;">Country
+ID<br>
+</td>
+<td style="vertical-align: top; width: 403px;"><input name="txtCountryID">* Must be a valid ID in country table</td>
+</tr>
+<tr>
+<td style="vertical-align: top;">Customer ID<br>
+</td>
+<td style="vertical-align: top;"><input name="txtCustomerID">* Must be a valid ID in customer table</td>
+</tr>
+</tbody>
+</table>
+<input name="Operation" value="updateAddress" type="hidden"> <input name="btnSubmit" value="Save Record" type="submit">&nbsp;&nbsp;&nbsp; <input name="btnReset" value="Clear Form" type="reset"><br>
+</form>
+<br>
+<br>
+</body></html>

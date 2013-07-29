@@ -1,0 +1,47 @@
+DROP TABLE CUSTOMERS;
+DROP TABLE ADDRESS;
+DROP TABLE COUNTRY;
+
+
+CREATE TABLE COUNTRY
+(
+country_id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+name varchar(255) NOT NULL,
+currency varchar(255) NOT NULL,
+exchange double,
+PRIMARY KEY (country_id)
+);
+
+
+
+CREATE TABLE CUSTOMERS
+(
+customer_id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+username varchar(255) NOT NULL,
+password varchar(255) NOT NULL,
+fName varchar(255),
+lName varchar(255),
+email varchar(255),
+since date,
+PRIMARY KEY (customer_id)
+);
+
+
+CREATE TABLE ADDRESS
+(
+address_id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+adrStreet varchar(255) NOT NULL,
+city varchar(255) NOT NULL,
+county varchar(255),
+postcode varchar(255),
+country_ID int NOT NULL,
+customer_id int NOT NULL,
+PRIMARY KEY (address_id),
+CONSTRAINT FK_customer_id FOREIGN KEY (customer_id) REFERENCES CUSTOMERS(customer_id),
+CONSTRAINT FK_country_id FOREIGN KEY (country_id) REFERENCES COUNTRY(country_id)
+);
+
+insert into country(name, currency, exchange) values ('Sri Lanka','LKR',0.4);
+insert into country(name, currency, exchange) values ('United Kingdom','GBP',1.0);
+insert into country(name, currency, exchange) values ('United States','USD',2.0);
+insert into country(name, currency, exchange) values ('Australia','AUD',1.34);

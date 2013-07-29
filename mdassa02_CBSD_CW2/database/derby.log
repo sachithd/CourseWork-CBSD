@@ -1,0 +1,30 @@
+Thu Apr 26 19:13:17 BST 2012 : Apache Derby Network Server - 10.8.1.2 - (1095077) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Thu Apr 26 19:13:18 BST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instance a816c00e-0136-efdb-6e30-ffff8341e4c8 
+on database directory C:\cbsd\course work\database\StratfordDB  with class loader sun.misc.Launcher$AppClassLoader@10393e97 
+Loaded from file:/C:/glassfish31/javadb/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_03-b05
+user.dir=C:\glassfish31\javadb
+derby.system.home=C:\cbsd\course work\database
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Apr 26 19:13:21 BST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instance 140d4147-0136-efdb-6e30-ffff8341e4c8 
+on database directory C:\cbsd\course work\database\cusdb  with class loader sun.misc.Launcher$AppClassLoader@10393e97 
+Loaded from file:/C:/glassfish31/javadb/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_03-b05
+user.dir=C:\glassfish31\javadb
+derby.system.home=C:\cbsd\course work\database
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Apr 26 19:14:56 BST 2012: Shutting down Derby engine
+----------------------------------------------------------------
+Thu Apr 26 19:14:56 BST 2012:
+Shutting down instance 140d4147-0136-efdb-6e30-ffff8341e4c8 on database directory C:\cbsd\course work\database\cusdb with class loader sun.misc.Launcher$AppClassLoader@10393e97 
+----------------------------------------------------------------
+Thu Apr 26 19:14:56 BST 2012:
+Shutting down instance a816c00e-0136-efdb-6e30-ffff8341e4c8 on database directory C:\cbsd\course work\database\StratfordDB with class loader sun.misc.Launcher$AppClassLoader@10393e97 
+----------------------------------------------------------------

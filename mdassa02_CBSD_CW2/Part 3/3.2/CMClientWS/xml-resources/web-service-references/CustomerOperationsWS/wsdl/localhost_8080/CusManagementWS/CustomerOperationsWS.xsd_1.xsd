@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.2-b13 (branches/2.2-6964; 2012-01-09T18:04:18+0000) JAXWS-RI/2.2.6-promoted-b20 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://webservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservices/">
+
+<xs:element name="address" type="tns:address"/>
+
+<xs:element name="countAddress" type="tns:countAddress"/>
+
+<xs:element name="countAddressResponse" type="tns:countAddressResponse"/>
+
+<xs:element name="countCountry" type="tns:countCountry"/>
+
+<xs:element name="countCountryResponse" type="tns:countCountryResponse"/>
+
+<xs:element name="countCustomer" type="tns:countCustomer"/>
+
+<xs:element name="countCustomerResponse" type="tns:countCustomerResponse"/>
+
+<xs:element name="country" type="tns:country"/>
+
+<xs:element name="createAddress" type="tns:createAddress"/>
+
+<xs:element name="createCountry" type="tns:createCountry"/>
+
+<xs:element name="createCustomer" type="tns:createCustomer"/>
+
+<xs:element name="customers" type="tns:customers"/>
+
+<xs:element name="editAddress" type="tns:editAddress"/>
+
+<xs:element name="editCountry" type="tns:editCountry"/>
+
+<xs:element name="editCustomer" type="tns:editCustomer"/>
+
+<xs:element name="findAddress" type="tns:findAddress"/>
+
+<xs:element name="findAddressResponse" type="tns:findAddressResponse"/>
+
+<xs:element name="findAllAddress" type="tns:findAllAddress"/>
+
+<xs:element name="findAllAddressResponse" type="tns:findAllAddressResponse"/>
+
+<xs:element name="findAllCountry" type="tns:findAllCountry"/>
+
+<xs:element name="findAllCountryResponse" type="tns:findAllCountryResponse"/>
+
+<xs:element name="findAllCustomer" type="tns:findAllCustomer"/>
+
+<xs:element name="findAllCustomerResponse" type="tns:findAllCustomerResponse"/>
+
+<xs:element name="findCountry" type="tns:findCountry"/>
+
+<xs:element name="findCountryResponse" type="tns:findCountryResponse"/>
+
+<xs:element name="findCustomer" type="tns:findCustomer"/>
+
+<xs:element name="findCustomerResponse" type="tns:findCustomerResponse"/>
+
+<xs:element name="findRangeAddress" type="tns:findRangeAddress"/>
+
+<xs:element name="findRangeAddressResponse" type="tns:findRangeAddressResponse"/>
+
+<xs:element name="findRangeCountry" type="tns:findRangeCountry"/>
+
+<xs:element name="findRangeCountryResponse" type="tns:findRangeCountryResponse"/>
+
+<xs:element name="findRangeCustomer" type="tns:findRangeCustomer"/>
+
+<xs:element name="findRangeCustomerResponse" type="tns:findRangeCustomerResponse"/>
+
+<xs:element name="removeAddress" type="tns:removeAddress"/>
+
+<xs:element name="removeCountry" type="tns:removeCountry"/>
+
+<xs:element name="removeCustomer" type="tns:removeCustomer"/>
+
+<xs:complexType name="createAddress">
+<xs:sequence>
+<xs:element name="entity" type="tns:address" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="address">
+<xs:sequence>
+<xs:element name="addressId" type="xs:int" minOccurs="0"/>
+<xs:element name="adrstreet" type="xs:string" minOccurs="0"/>
+<xs:element name="city" type="xs:string" minOccurs="0"/>
+<xs:element name="countryId" type="tns:country" minOccurs="0"/>
+<xs:element name="county" type="xs:string" minOccurs="0"/>
+<xs:element name="customerId" type="tns:customers" minOccurs="0"/>
+<xs:element name="postcode" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="country">
+<xs:sequence>
+<xs:element name="countryId" type="xs:int" minOccurs="0"/>
+<xs:element name="currency" type="xs:string" minOccurs="0"/>
+<xs:element name="exchange" type="xs:double" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="customers">
+<xs:sequence>
+<xs:element name="customerId" type="xs:int" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="fname" type="xs:string" minOccurs="0"/>
+<xs:element name="lname" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="since" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeCountry">
+<xs:sequence>
+<xs:element name="entity" type="tns:country" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createCustomer">
+<xs:sequence>
+<xs:element name="entity" type="tns:customers" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAddress">
+<xs:sequence>
+<xs:element name="id" type="xs:anyType" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAddressResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:address" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editCountry">
+<xs:sequence>
+<xs:element name="entity" type="tns:country" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="countCustomer">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="countCustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="countCountry">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="countCountryResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeAddress">
+<xs:sequence>
+<xs:element name="entity" type="tns:address" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editAddress">
+<xs:sequence>
+<xs:element name="entity" type="tns:address" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAllCustomer">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findAllCustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:customers" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findRangeAddress">
+<xs:sequence>
+<xs:element name="range" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findRangeAddressResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:address" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAllAddress">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findAllAddressResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:address" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createCountry">
+<xs:sequence>
+<xs:element name="entity" type="tns:country" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findRangeCustomer">
+<xs:sequence>
+<xs:element name="range" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findRangeCustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:customers" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAllCountry">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findAllCountryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:country" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findRangeCountry">
+<xs:sequence>
+<xs:element name="range" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findRangeCountryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:country" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findCustomer">
+<xs:sequence>
+<xs:element name="id" type="xs:anyType" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findCustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:customers" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findCountry">
+<xs:sequence>
+<xs:element name="id" type="xs:anyType" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findCountryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:country" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editCustomer">
+<xs:sequence>
+<xs:element name="entity" type="tns:customers" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="countAddress">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="countAddressResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeCustomer">
+<xs:sequence>
+<xs:element name="entity" type="tns:customers" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

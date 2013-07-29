@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/C:/cbsd/course%20work/Part%202/2.2/CustomerManagement/src/java/servlets/AddressOperations.java</file>
+        <file>file:/C:/cbsd/course%20work/Part%202/2.2/CustomerManagement/src/java/servlets/CountryOperations.java</file>
+        <file>file:/C:/cbsd/course%20work/Part%202/2.2/CustomerManagement/src/java/servlets/CustomerOperations.java</file>
+        <file>file:/C:/cbsd/course%20work/Part%202/2.2/CustomerManagement/src/java/model/Address.java</file>
+        <file>file:/C:/cbsd/course%20work/Part%202/2.2/CustomerManagement/src/java/model/Country.java</file>
+        <file>file:/C:/cbsd/course%20work/Part%202/2.2/CustomerManagement/src/java/model/Customers.java</file>
+        <file>file:/C:/cbsd/course%20work/Part%202/2.2/CustomerManagement/src/java/controllerlStratford/AbstractFacadeSt.java</file>
+        <file>file:/C:/cbsd/course%20work/Part%202/2.2/CustomerManagement/src/java/controllerlStratford/AddressFacadeSt.java</file>
+        <file>file:/C:/cbsd/course%20work/Part%202/2.2/CustomerManagement/src/java/controllerlStratford/CountryFacadeSt.java</file>
+        <file>file:/C:/cbsd/course%20work/Part%202/2.2/CustomerManagement/src/java/controllerlStratford/CustomersFacadeSt.java</file>
+        <file>file:/C:/cbsd/course%20work/Part%202/2.2/CustomerManagement/src/java/controller/AddressFacade.java</file>
+        <file>file:/C:/cbsd/course%20work/Part%202/2.2/CustomerManagement/src/java/controller/CountryFacade.java</file>
+        <file>file:/C:/cbsd/course%20work/Part%202/2.2/CustomerManagement/src/java/controller/CustomersFacade.java</file>
+        <file>file:/C:/cbsd/course%20work/Part%202/2.2/CustomerManagement/src/conf/persistence.xml</file>
+        <file>file:/C:/cbsd/course%20work/Part%202/2.2/CustomerManagement/setup/glassfish-resources.xml</file>
+    </open-files>
+</project-private>

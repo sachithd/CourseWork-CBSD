@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Update country</title></head>
+    <body>
+        <h3 style="color: rgb(51, 0, 153);"><big><big>Update Existing Country</big></big></h3>
+
+    <br>
+
+
+    <form method="post" action="/CustomerManagement/CountryOperations" name="CustomerData">
+        <div style="text-align: left;">Database : <select size="1" name="Database">
+                <option value="DaghenamDB" selected="selected">DaghenamDB</option><option value="StratfordDB">StratfordDB</option></select><br>
+        </div><table style="text-align: left; width: 850px; height: 172px;" border="1" cellpadding="2" cellspacing="2">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top; width: 427px;">Country ID<br>
+                    </td>
+                    <td style="vertical-align: top; width: 403px;"><input name="txtCountryID"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top; width: 427px;">Country Name<br>
+                    </td>
+                    <td style="vertical-align: top; width: 403px;"><input name="txtCountryName"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top; width: 427px;">Currency<br>
+                    </td>
+                    <td style="vertical-align: top; width: 403px;"><input name="txtCurrency"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top; width: 427px;">Exchange<br>
+                    </td>
+                    <td style="vertical-align: top; width: 403px;"><input name="txtExchange"><br>
+                    </td>
+                </tr>
+
+
+
+            </tbody>
+        </table>
+        <input name="Operation" value="updateCountry" type="hidden">  
+        <input name="btnSubmit" value="Save Record" type="submit">&nbsp;&nbsp;&nbsp;
+        <input name="btnReset" value="Clear Form" type="reset"><br>
+    </form>
+
+
+    <br>
+
+
+    <br>
+
+
+</body></html>

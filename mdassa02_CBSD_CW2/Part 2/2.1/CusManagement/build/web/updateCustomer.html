@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Update Existing Customer</title>
+
+</head>
+<body>
+<h3 style="color: rgb(51, 0, 153);"><big><big>Update Existing Customer<br>
+</big></big></h3>
+<form method="post" action="/CusManagement/CustomerOperations" name="CustomerData"> <div style="text-align: left;">Database :
+<select size="1" name="Database"><option value="DaghenamDB" selected="selected">DaghenamDB</option><option value="StratfordDB">StratfordDB</option></select>
+<br>
+</div>
+<table style="text-align: left; width: 850px; height: 172px;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 427px;">Customer
+ID<br>
+</td>
+<td style="vertical-align: top; width: 403px;"><input name="txtCustomerID">* Must be a valid customer id<br>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 427px;">User
+Name<br>
+</td>
+<td style="vertical-align: top; width: 403px;"><input name="txtUserName"><br>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 427px;">Password<br>
+</td>
+<td style="vertical-align: top; width: 403px;"><input name="txtPassword" type="password"><br>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 427px;">First
+Name<br>
+</td>
+<td style="vertical-align: top; width: 403px;"><input name="txtFName"><br>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 427px;">Last
+Name<br>
+</td>
+<td style="vertical-align: top; width: 403px;"><input name="txtLName"><br>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 427px;">Email<br>
+</td>
+<td style="vertical-align: top; width: 403px;"><input name="txtEmail"><br>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;">Since<br>
+</td>
+<td style="vertical-align: top;"><input name="txtSince">Eg: 2012-02-29<br>
+</td>
+</tr>
+</tbody>
+</table>
+<input name="Operation" value="updateCustomer" type="hidden">  
+<input name="btnSubmit" value="Save Record" type="submit">&nbsp;&nbsp;&nbsp; 
+<input name="btnReset" value="Clear Form" type="reset"><br>
+</form>
+<br>
+<br>
+</body></html>
